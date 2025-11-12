@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to CozyHood</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+
+    <div class="welcome-container">
+        
+        <div class="welcome-step" id="language-step">
+            <h1 class="logo-title">🧢 CozyHood</h1>
+            <h2 data-key="lang_prompt">Select Your Language / अपनी भाषा चुनें</h2>
+            <div class="lang-buttons">
+                <button class="lang-btn" data-lang="en">English</button>
+                <button class="lang-btn" data-lang="hi">हिन्दी (Hindi)</button>
+            </div>
+        </div>
+
+        <div class="welcome-step" id="login-step" style="display: none;">
+            
+            <h1 class="logo-title">🧢 CozyHood</h1>
+            
+            <div class="form-tabs">
+                <button class="tab-btn active" data-tab="login" data-key="login_title">Login</button>
+                <button class="tab-btn" data-tab="signup" data-key="signup_title">Sign Up</button>
+            </div>
+
+            <form id="login-form" class="auth-form active">
+                <div class="input-group">
+                    <label for="login-email" data-key="label_email_mobile">Email or Mobile</label>
+                    <input type="text" id="login-email" required>
+                </div>
+                <div class="input-group">
+                    <label for="login-password" data-key="label_password">Password</label>
+                    <input type="password" id="login-password" required>
+                </div>
+                <button type="submit" class="submit-btn" data-key="btn_login">Login</button>
+            </form>
+
+            <form id="signup-form" class="auth-form">
+                <div class="input-group">
+                    <label for="signup-email" data-key="label_email">Email</label>
+                    <input type="email" id="signup-email" required>
+                </div>
+                <div class="input-group">
+                    <label for="signup-password" data-key="label_create_password">Create Password</label>
+                    <input type="password" id="signup-password" required>
+                </div>
+                <button type="submit" class="submit-btn" data-key="btn_signup">Sign Up</button>
+            </form>
+
+        </div>
+
+    </div>
+
+    <script src="login.js"></script>
+</body>
+</html>

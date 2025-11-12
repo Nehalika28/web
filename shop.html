@@ -1,0 +1,1108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CozyHood - Find Your Perfect Hoodie</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="shop.style.css">
+</head>
+<body>
+    
+    <div class="snowfall-container"></div>
+
+    <header>
+        <div class="container header-container">
+            <a href="#" class="logo">
+                <h1 data-key="logo_text">🧢 CozyHood</h1>
+            </a>
+            
+            <nav>
+                <ul>
+                    <li><a href="#" class="category-nav-btn active" data-category="all" data-key="nav_all">All</a></li>
+                    <li><a href="#" class="category-nav-btn" data-category="male" data-key="nav_male">Male</a></li>
+                    <li><a href="#" class="category-nav-btn" data-category="female" data-key="nav_female">Female</a></li>
+                    <li><a href="#" class="category-nav-btn" data-category="kids" data-key="nav_kids">Kids</a></li>
+                </ul>
+            </nav>
+            <div class="header-right">
+                <select id="lang-select">
+                    <option value="en">English</option>
+                    <option value="hi">हिन्दी</option>
+                </select>
+                
+                <a href="#" id="user-icon-link" aria-label="Open login" data-key="nav_login">
+                    <i class="fas fa-user" id="user-icon"></i>
+                </a>
+                
+                <a href="#" id="cart-icon" aria-label="Open cart">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span id="cart-count">0</span>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="hero-content">
+         
+            <h2 data-key="hero_title">Find Your Cozy</h2>
+            <p data-key="hero_subtitle">Shop the latest collection of hoodies from your favorite brands.</p>
+            <a href="#" class="cta-btn" data-key="hero_cta">Shop Now</a>
+        </div>
+    </section>
+
+    <main class="shop-area container">
+        
+        <aside class="filters">
+            <h3 data-key="filters_title">Filters</h3>
+            <div class="filter-group">
+                <input type="search" id="search-input" data-key-placeholder="filters_search_placeholder" placeholder="Search hoodies...">
+            </div>
+            
+            <div class="filter-group">
+                <h4 data-key="filters_type_title">Product Type</h4>
+                <div class="product-type-filters">
+                    <button class="filter-btn active" data-type="all" data-key="type_all">All</button>
+                    <button class="filter-btn" data-type="hoodie" data-key="type_hoodie">Hoodies</button>
+                    <button class="filter-btn" data-type="jacket" data-key="type_jacket">Jackets</button>
+                    <button class="filter-btn" data-type="sweater" data-key="type_sweater">Sweaters</button>
+                    <button class="filter-btn" data-type="scarf" data-key="type_scarf">Scarves</button>
+                    <button class="filter-btn" data-type="denim" data-key="type_denim">Denim</button>
+                    <button class="filter-btn" data-type="lower" data-key="type_lower">Lowers</button>
+                    <button class="filter-btn" data-type="cap" data-key="type_cap">Caps</button>
+                    <button class="filter-btn" data-type="thermal" data-key="type_thermal">Thermals</button>
+                    <button class="filter-btn" data-type="socks" data-key="type_socks">Socks</button>
+                </div>
+            </div>
+            <div class="filter-group">
+                <h4 data-key="filters_brands_title">Brands</h4>
+                <div class="brand-filters">
+                    <button class="filter-btn active" data-brand="all" data-key="brand_all">All</button>
+                    <button class="filter-btn" data-brand="Nike">Nike</button>
+                    <button class="filter-btn" data-brand="Adidas">Adidas</button>
+                    <button class="filter-btn" data-brand="Puma">Puma</button>
+                    <button class="filter-btn" data-brand="HRX">HRX</button>
+                    <button class="filter-btn" data-brand="H&M">H&M</button>
+                    <button class="filter-btn" data-brand="Roadster">Roadster</button>
+                </div>
+            </div>
+            
+        </aside>
+
+        <section class="product-grid" id="product-grid">
+
+            <div class="product-card" data-category="female" data-product-type="denim" data-brand="Roadster" data-id="30" data-price="2999" data-discount="10" data-rating="4.4" data-reviews="75" data-sizes="S,M,L">
+                <div class="product-image">
+                    <img src="image01.jpeg" alt="Roadster Denim Jacket"> 
+                    <i class="far fa-heart wishlist-icon"></i>
+                </div>
+                <div class="product-info">
+                    <span class="brand">Roadster</span>
+                    <h3 data-key="product_name_30">Roadster Denim Jacket</h3>
+                    <div class="price-container">
+                        <p class="price final-price">₹2,999</p>
+                        <p class="price original-price">₹3,332</p>
+                    </div>
+                    <div class="product-actions">
+                        <button class="add-to-cart-btn" data-key="add_to_cart_btn">Add to Cart</button>
+                        <button class="buy-now-btn" data-key="buy_now_btn">Buy Now</button>
+                    </div>
+                </div>
+            </div>
+                        <div class="product-card" data-category="female" data-product-type="denim" data-brand="Roadster" data-id="30" data-price="2999" data-discount="10" data-rating="4.4" data-reviews="75" data-sizes="S,M,L">
+                <div class="product-image">
+                    <img src="image10.jpg" alt="Roadster Denim Jacket"> 
+                    <i class="far fa-heart wishlist-icon"></i>
+                </div>
+                <div class="product-info">
+                    <span class="brand">Roadster</span>
+                    <h3 data-key="product_name_30">Roadster Denim Jacket</h3>
+                    <div class="price-container">
+                        <p class="price final-price">₹2,999</p>
+                        <p class="price original-price">₹3,332</p>
+                    </div>
+                    <div class="product-actions">
+                        <button class="add-to-cart-btn" data-key="add_to_cart_btn">Add to Cart</button>
+                        <button class="buy-now-btn" data-key="buy_now_btn">Buy Now</button>
+                    </div>
+                </div>
+            </div>
+                        <div class="product-card" data-category="female" data-product-type="denim" data-brand="Roadster" data-id="30" data-price="2999" data-discount="10" data-rating="4.4" data-reviews="75" data-sizes="S,M,L">
+                <div class="product-image">
+                    <img src="image09.jpeg" alt="Roadster Denim Jacket"> 
+                    <i class="far fa-heart wishlist-icon"></i>
+                </div>
+                <div class="product-info">
+                    <span class="brand">Roadster</span>
+                    <h3 data-key="product_name_30">Roadster Denim Jacket</h3>
+                    <div class="price-container">
+                        <p class="price final-price">₹2,999</p>
+                        <p class="price original-price">₹3,332</p>
+                    </div>
+                    <div class="product-actions">
+                        <button class="add-to-cart-btn" data-key="add_to_cart_btn">Add to Cart</button>
+                        <button class="buy-now-btn" data-key="buy_now_btn">Buy Now</button>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="product-card" data-category="female" data-product-type="sweater" data-brand="H&M" data-id="31" data-price="1999" data-discount="20" data-rating="4.6" data-reviews="88" data-sizes="S,M,L">
+                <div class="product-image">
+                    <img src="image02.jpeg" alt="H&M Woollen Sweater"> 
+                    <i class="far fa-heart wishlist-icon"></i>
+                </div>
+                <div class="product-info">
+                    <span class="brand">H&M</span>
+                    <h3 data-key="product_name_31">H&M Woollen Sweater</h3>
+                    <div class="price-container">
+                        <p class="price final-price">₹1,999</p>
+                        <p class="price original-price">₹2,499</p>
+                    </div>
+                    <div class="product-actions">
+                        <button class="add-to-cart-btn" data-key="add_to_cart_btn">Add to Cart</button>
+                        <button class="buy-now-btn" data-key="buy_now_btn">Buy Now</button>
+                    </div>
+                </div>
+            </div>
+                <div class="product-card" data-category="female" data-product-type="sweater" data-brand="H&M" data-id="31" data-price="1999" data-discount="20" data-rating="4.6" data-reviews="88" data-sizes="S,M,L">
+                <div class="product-image">
+                    <img src="image08.jpeg" alt="H&M Woollen Sweater"> 
+                    <i class="far fa-heart wishlist-icon"></i>
+                </div>
+                <div class="product-info">
+                    <span class="brand">H&M</span>
+                    <h3 data-key="product_name_31">H&M Woollen Sweater</h3>
+                    <div class="price-container">
+                        <p class="price final-price">₹1,999</p>
+                        <p class="price original-price">₹2,499</p>
+                    </div>
+                    <div class="product-actions">
+                        <button class="add-to-cart-btn" data-key="add_to_cart_btn">Add to Cart</button>
+                        <button class="buy-now-btn" data-key="buy_now_btn">Buy Now</button>
+                    </div>
+                </div>
+            </div>
+                <div class="product-card" data-category="female" data-product-type="sweater" data-brand="H&M" data-id="31" data-price="1999" data-discount="20" data-rating="4.6" data-reviews="88" data-sizes="S,M,L">
+                <div class="product-image">
+                    <img src="image07.jpeg" alt="H&M Woollen Sweater"> 
+                    <i class="far fa-heart wishlist-icon"></i>
+                </div>
+                <div class="product-info">
+                    <span class="brand">H&M</span>
+                    <h3 data-key="product_name_31">H&M Woollen Sweater</h3>
+                    <div class="price-container">
+                        <p class="price final-price">₹1,999</p>
+                        <p class="price original-price">₹2,499</p>
+                    </div>
+                    <div class="product-actions">
+                        <button class="add-to-cart-btn" data-key="add_to_cart_btn">Add to Cart</button>
+                        <button class="buy-now-btn" data-key="buy_now_btn">Buy Now</button>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="product-card" data-category="male" data-product-type="cap" data-brand="Puma" data-id="32" data-price="1299" data-discount="10" data-rating="4.8" data-reviews="210" data-sizes="OS">
+                <div class="product-image">
+                    <img src="images03.jpeg" alt="Puma Baseball Cap"> 
+                    <i class="far fa-heart wishlist-icon"></i>
+                </div>
+                <div class="product-info">
+                    <span class="brand">Puma</span>
+                    <h3 data-key="product_name_32">Puma Baseball Cap</h3>
+                    <div class="price-container">
+                        <p class="price final-price">₹1,299</p>
+                        <p class="price original-price">₹1,443</p>
+                    </div>
+                    <div class="product-actions">
+                        <button class="add-to-cart-btn" data-key="add_to_cart_btn">Add to Cart</button>
+                        <button class="buy-now-btn" data-key="buy_now_btn">Buy Now</button>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="product-card" data-category="male" data-product-type="cap" data-brand="Puma" data-id="32" data-price="1299" data-discount="10" data-rating="4.8" data-reviews="210" data-sizes="OS">
+                <div class="product-image">
+                    <img src="image11.jpeg" alt="Puma Baseball Cap"> 
+                    <i class="far fa-heart wishlist-icon"></i>
+                </div>
+                <div class="product-info">
+                    <span class="brand">Puma</span>
+                    <h3 data-key="product_name_32">Puma Baseball Cap</h3>
+                    <div class="price-container">
+                        <p class="price final-price">₹1,299</p>
+                        <p class="price original-price">₹1,443</p>
+                    </div>
+                    <div class="product-actions">
+                        <button class="add-to-cart-btn" data-key="add_to_cart_btn">Add to Cart</button>
+                        <button class="buy-now-btn" data-key="buy_now_btn">Buy Now</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-card" data-category="male" data-product-type="cap" data-brand="Puma" data-id="32" data-price="1299" data-discount="10" data-rating="4.8" data-reviews="210" data-sizes="OS">
+                <div class="product-image">
+                    <img src="images12.jpeg" alt="Puma Baseball Cap"> 
+                    <i class="far fa-heart wishlist-icon"></i>
+                </div>
+                <div class="product-info">
+                    <span class="brand">Puma</span>
+                    <h3 data-key="product_name_32">Puma Baseball Cap</h3>
+                    <div class="price-container">
+                        <p class="price final-price">₹1,299</p>
+                        <p class="price original-price">₹1,443</p>
+                    </div>
+                    <div class="product-actions">
+                        <button class="add-to-cart-btn" data-key="add_to_cart_btn">Add to Cart</button>
+                        <button class="buy-now-btn" data-key="buy_now_btn">Buy Now</button>
+                    </div>
+                </div>
+            </div>
+           
+        
+            <div class="product-card" data-category="female" data-product-type="scarf" data-brand="H&M" data-id="34" data-price="999" data-discount="0" data-rating="4.2" data-reviews="45" data-sizes="OS">
+                <div class="product-image">
+                    <img src="image05.jpeg" alt="H&M Patterned Scarf"> 
+                    <i class="far fa-heart wishlist-icon"></i>
+                </div>
+                <div class="product-info">
+                    <span class="brand">H&M</span>
+                    <h3 data-key="product_name_34">H&M Patterned Scarf</h3>
+                    <div class="price-container">
+                        <p class="price final-price">₹999</p>
+                        <p class="price original-price" style="display: none;">₹999</p>
+                    </div>
+                    <div class="product-actions">
+                        <button class="add-to-cart-btn" data-key="add_to_cart_btn">Add to Cart</button>
+                        <button class="buy-now-btn" data-key="buy_now_btn">Buy Now</button>
+                    </div>
+                </div>
+            </div>
+             <div class="product-card" data-category="female" data-product-type="scarf" data-brand="H&M" data-id="34" data-price="999" data-discount="0" data-rating="4.2" data-reviews="45" data-sizes="OS">
+                <div class="product-image">
+                    <img src="images15.jpeg" alt="H&M Patterned Scarf"> 
+                    <i class="far fa-heart wishlist-icon"></i>
+                </div>
+                <div class="product-info">
+                    <span class="brand">H&M</span>
+                    <h3 data-key="product_name_34">H&M Patterned Scarf</h3>
+                    <div class="price-container">
+                        <p class="price final-price">₹999</p>
+                        <p class="price original-price" style="display: none;">₹999</p>
+                    </div>
+                    <div class="product-actions">
+                        <button class="add-to-cart-btn" data-key="add_to_cart_btn">Add to Cart</button>
+                        <button class="buy-now-btn" data-key="buy_now_btn">Buy Now</button>
+                    </div>
+                </div>
+            </div>
+             <div class="product-card" data-category="female" data-product-type="scarf" data-brand="H&M" data-id="34" data-price="999" data-discount="0" data-rating="4.2" data-reviews="45" data-sizes="OS">
+                <div class="product-image">
+                    <img src="images16.jpeg" alt="H&M Patterned Scarf"> 
+                    <i class="far fa-heart wishlist-icon"></i>
+                </div>
+                <div class="product-info">
+                    <span class="brand">H&M</span>
+                    <h3 data-key="product_name_34">H&M Patterned Scarf</h3>
+                    <div class="price-container">
+                        <p class="price final-price">₹999</p>
+                        <p class="price original-price" style="display: none;">₹999</p>
+                    </div>
+                    <div class="product-actions">
+                        <button class="add-to-cart-btn" data-key="add_to_cart_btn">Add to Cart</button>
+                        <button class="buy-now-btn" data-key="buy_now_btn">Buy Now</button>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="product-card" data-category="kids" data-product-type="jacket" data-brand="Roadster" data-id="35" data-price="2499" data-discount="30" data-rating="4.7" data-reviews="92" data-sizes="S,M">
+                <div class="product-image">
+                    <img src="image06.jpeg" alt="Roadster Kids Jacket"> 
+                    <i class="far fa-heart wishlist-icon"></i>
+                </div>
+                <div class="product-info">
+                    <span class="brand">Roadster</span>
+                    <h3 data-key="product_name_35">Roadster Kids Jacket</h3>
+                    <div class="price-container">
+                        <p class="price final-price">₹2,499</p>
+                        <p class="price original-price">₹3,570</p>
+                    </div>
+                    <div class="product-actions">
+                        <button class="add-to-cart-btn" data-key="add_to_cart_btn">Add to Cart</button>
+                        <button class="buy-now-btn" data-key="buy_now_btn">Buy Now</button>
+                    </div>
+                </div>
+            </div>
+   <div class="product-card" data-category="kids" data-product-type="jacket" data-brand="Roadster" data-id="35" data-price="2499" data-discount="30" data-rating="4.7" data-reviews="92" data-sizes="S,M">
+                <div class="product-image">
+                    <img src="images20.jpeg" alt="Roadster Kids Jacket"> 
+                    <i class="far fa-heart wishlist-icon"></i>
+                </div>
+                <div class="product-info">
+                    <span class="brand">Roadster</span>
+                    <h3 data-key="product_name_35">Roadster Kids Jacket</h3>
+                    <div class="price-container">
+                        <p class="price final-price">₹2,499</p>
+                        <p class="price original-price">₹3,570</p>
+                    </div>
+                    <div class="product-actions">
+                        <button class="add-to-cart-btn" data-key="add_to_cart_btn">Add to Cart</button>
+                        <button class="buy-now-btn" data-key="buy_now_btn">Buy Now</button>
+                    </div>
+                </div>
+            </div>
+               <div class="product-card" data-category="kids" data-product-type="jacket" data-brand="Roadster" data-id="35" data-price="2499" data-discount="30" data-rating="4.7" data-reviews="92" data-sizes="S,M">
+                <div class="product-image">
+                    <img src="image19.jpeg" alt="Roadster Kids Jacket"> 
+                    <i class="far fa-heart wishlist-icon"></i>
+                </div>
+                <div class="product-info">
+                    <span class="brand">Roadster</span>
+                    <h3 data-key="product_name_35">Roadster Kids Jacket</h3>
+                    <div class="price-container">
+                        <p class="price final-price">₹2,499</p>
+                        <p class="price original-price">₹3,570</p>
+                    </div>
+                    <div class="product-actions">
+                        <button class="add-to-cart-btn" data-key="add_to_cart_btn">Add to Cart</button>
+                        <button class="buy-now-btn" data-key="buy_now_btn">Buy Now</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-card" data-category="male" data-product-type="hoodie" data-brand="Nike" data-id="1" data-price="4995" data-discount="20" data-rating="4.5" data-reviews="122" data-sizes="S,M,L,XL">
+                <div class="product-image">
+                    <img src="nike01.jpeg" alt="Nike Sportswear Hoodie">
+                    <i class="far fa-heart wishlist-icon"></i>
+                </div>
+                <div class="product-info">
+                    <span class="brand">Nike</span>
+                    <h3 data-key="product_name_1">Nike Sportswear Hoodie</h3>
+                    <div class="price-container">
+                        <p class="price final-price">₹4,995</p>
+                        <p class="price original-price">₹6,244</p>
+                    </div>
+                    <div class="product-actions">
+                        <button class="add-to-cart-btn" data-key="add_to_cart_btn">Add to Cart</button>
+                        <button class="buy-now-btn" data-key="buy_now_btn">Buy Now</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-card" data-category="female" data-product-type="hoodie" data-brand="Nike" data-id="7" data-price="5495" data-discount="15" data-rating="4.7" data-reviews="98" data-sizes="M,L,XL">
+                <div class="product-image">
+                    <img src="nike02.jpeg" alt="Nike Air Pullover">
+                    <i class="far fa-heart wishlist-icon"></i>
+                </div>
+                <div class="product-info">
+                    <span class="brand">Nike</span>
+                    <h3 data-key="product_name_7">Nike Air Pullover</h3>
+                    <div class="price-container">
+                        <p class="price final-price">₹5,495</p>
+                        <p class="price original-price">₹6,465</p>
+                    </div>
+                    <div class="product-actions">
+                        <button class="add-to-cart-btn" data-key="add_to_cart_btn">Add to Cart</button>
+                        <button class="buy-now-btn" data-key="buy_now_btn">Buy Now</button>
+                    </div>
+                </div>
+            </div>
+            <div class="product-card" data-category="male" data-product-type="hoodie" data-brand="Nike" data-id="7" data-price="5495" data-discount="15" data-rating="4.7" data-reviews="98" data-sizes="M,L,XL">
+                <div class="product-image">
+                    <img src="nike07.jpeg" alt="Nike Air Pullover">
+                    <i class="far fa-heart wishlist-icon"></i>
+                </div>
+                <div class="product-info">
+                    <span class="brand">Nike</span>
+                    <h3 data-key="product_name_7">Nike Air Pullover</h3>
+                    <div class="price-container">
+                        <p class="price final-price">₹5,495</p>
+                        <p class="price original-price">₹6,465</p>
+                    </div>
+                    <div class="product-actions">
+                        <button class="add-to-cart-btn" data-key="add_to_cart_btn">Add to Cart</button>
+                        <button class="buy-now-btn" data-key="buy_now_btn">Buy Now</button>
+                    </div>
+                </div>
+            </div>
+            <div class="product-card" data-category="female" data-product-type="hoodie" data-brand="Nike" data-id="7" data-price="5495" data-discount="15" data-rating="4.7" data-reviews="98" data-sizes="M,L,XL">
+                <div class="product-image">
+                    <img src="nike06.jpeg" alt="Nike Air Pullover">
+                    <i class="far fa-heart wishlist-icon"></i>
+                </div>
+                <div class="product-info">
+                    <span class="brand">Nike</span>
+                    <h3 data-key="product_name_7">Nike Air Pullover</h3>
+                    <div class="price-container">
+                        <p class="price final-price">₹5,495</p>
+                        <p class="price original-price">₹6,465</p>
+                    </div>
+                    <div class="product-actions">
+                        <button class="add-to-cart-btn" data-key="add_to_cart_btn">Add to Cart</button>
+                        <button class="buy-now-btn" data-key="buy_now_btn">Buy Now</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-card" data-category="female" data-product-type="hoodie" data-brand="Nike" data-id="13" data-price="6499" data-discount="10" data-rating="4.8" data-reviews="210" data-sizes="S,M,L">
+                <div class="product-image">
+                    <img src="nike03.jpeg" alt="Nike Tech Fleece">
+                    <i class="far fa-heart wishlist-icon"></i>
+                </div>
+                <div class="product-info">
+                    <span class="brand">Nike</span>
+                    <h3 data-key="product_name_13">Nike Tech Fleece</h3>
+                    <div class="price-container">
+                        <p class="price final-price">₹6,499</p>
+                        <p class="price original-price">₹7,221</p>
+                    </div>
+                    <div class="product-actions">
+                        <button class="add-to-cart-btn" data-key="add_to_cart_btn">Add to Cart</button>
+                        <button class="buy-now-btn" data-key="buy_now_btn">Buy Now</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-card" data-category="male" data-product-type="hoodie" data-brand="Nike" data-id="14" data-price="3999" data-discount="25" data-rating="4.3" data-reviews="80" data-sizes="S,M,L,XL">
+                <div class="product-image">
+                    <img src="nikes04.jpeg" alt="Nike Club Hoodie">
+                    <i class="far fa-heart wishlist-icon"></i>
+                </div>
+                <div class="product-info">
+                    <span class="brand">Nike</span>
+                    <h3 data-key="product_name_14">Nike Club Hoodie</h3>
+                    <div class="price-container">
+                        <p class="price final-price">₹3,999</p>
+                        <p class="price original-price">₹5,332</p>
+                    </div>
+                    <div class="product-actions">
+                        <button class="add-to-cart-btn" data-key="add_to_cart_btn">Add to Cart</button>
+                        <button class="buy-now-btn" data-key="buy_now_btn">Buy Now</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-card" data-category="male" data-product-type="hoodie" data-brand="Nike" data-id="15" data-price="4499" data-discount="0" data-rating="4.1" data-reviews="45" data-sizes="S,L">
+                <div class="product-image">
+                    <img src="nikes05.jpeg" alt="Nike Urban Fit">
+                    <i class="far fa-heart wishlist-icon"></i>
+                </div>
+                <div class="product-info">
+                    <span class="brand">Nike</span>
+                    <h3 data-key="product_name_15">Nike Urban Fit</h3>
+                    <div class="price-container">
+                        <p class="price final-price">₹4,499</p>
+                        <p class="price original-price" style="display: none;">₹4,499</p>
+                    </div>
+                    <div class="product-actions">
+                        <button class="add-to-cart-btn" data-key="add_to_cart_btn">Add to Cart</button>
+                        <button class="buy-now-btn" data-key="buy_now_btn">Buy Now</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-card" data-category="male" data-product-type="hoodie" data-brand="Adidas" data-id="2" data-price="3599" data-discount="30" data-rating="4.6" data-reviews="150" data-sizes="S,M,L">
+                <div class="product-image">
+                    <img src="adidas01.jpeg" alt="Adidas Originals Trefoil">
+                    <i class="far fa-heart wishlist-icon"></i>
+                </div>
+                <div class="product-info">
+                    <span class="brand">Adidas</span>
+                    <h3 data-key="product_name_2">Adidas Originals Trefoil</h3>
+                    <div class="price-container">
+                        <p class="price final-price">₹3,599</p>
+                        <p class="price original-price">₹5,141</p>
+                    </div>
+                    <div class="product-actions">
+                        <button class="add-to-cart-btn" data-key="add_to_cart_btn">Add to Cart</button>
+                        <button class="buy-now-btn" data-key="buy_now_btn">Buy Now</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-card" data-category="male" data-product-type="hoodie" data-brand="Adidas" data-id="8" data-price="6999" data-discount="10" data-rating="4.9" data-reviews="190" data-sizes="M,L">
+                <div class="product-image">
+                    <img src="adidas02.jpeg" alt="Adidas Z.N.E. Hoodie">
+                    <i class="far fa-heart wishlist-icon"></i>
+                </div>
+                <div class="product-info">
+                    <span class="brand">Adidas</span>
+                    <h3 data-key="product_name_8">Adidas Z.N.E. Hoodie</h3>
+                    <div class="price-container">
+                        <p class="price final-price">₹6,999</p>
+                        <p class="price original-price">₹7,777</p>
+                    </div>
+                    <div class="product-actions">
+                        <button class="add-to-cart-btn" data-key="add_to_cart_btn">Add to Cart</button>
+                        <button class="buy-now-btn" data-key="buy_now_btn">Buy Now</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-card" data-category="male" data-product-type="hoodie" data-brand="Adidas" data-id="16" data-price="4799" data-discount="15" data-rating="4.2" data-reviews="77" data-sizes="S,M,L,XL">
+                <div class="product-image">
+                    <img src="adidas03.jpeg" alt="Adidas Training Hoodie">
+                    <i class="far fa-heart wishlist-icon"></i>
+                </div>
+                <div class="product-info">
+                    <span class="brand">Adidas</span>
+                    <h3 data-key="product_name_16">Adidas Training Hoodie</h3>
+                    <div class="price-container">
+                        <p class="price final-price">₹4,799</p>
+                        <p class="price original-price">₹5,646</p>
+                    </div>
+                    <div class="product-actions">
+                        <button class="add-to-cart-btn" data-key="add_to_cart_btn">Add to Cart</button>
+                        <button class="buy-now-btn" data-key="buy_now_btn">Buy Now</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-card" data-category="male" data-product-type="hoodie" data-brand="Adidas" data-id="17" data-price="3999" data-discount="0" data-rating="4.0" data-reviews="30" data-sizes="S,M">
+                <div class="product-image">
+                    <img src="adidas04.jpeg" alt="Adidas Performance Pullover">
+                    <i class="far fa-heart wishlist-icon"></i>
+                </div>
+                <div class="product-info">
+                    <span class="brand">Adidas</span>
+                    <h3 data-key="product_name_17">Adidas Performance Pullover</h3>
+                    <div class="price-container">
+                        <p class="price final-price">₹3,999</p>
+                        <p class="price original-price" style="display: none;">₹3,999</p>
+                    </div>
+                    <div class="product-actions">
+                        <button class="add-to-cart-btn" data-key="add_to_cart_btn">Add to Cart</button>
+                        <button class="buy-now-btn" data-key="buy_now_btn">Buy Now</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-card" data-category="male" data-product-type="hoodie" data-brand="Adidas" data-id="18" data-price="5199" data-discount="20" data-rating="4.4" data-reviews="89" data-sizes="S,M,L,XL">
+                <div class="product-image">
+                    <img src="adidas05.jpeg" alt="Adidas Streetwear Hoodie">
+                    <i class="far fa-heart wishlist-icon"></i>
+                </div>
+                <div class="product-info">
+                    <span class="brand">Adidas</span>
+                    <h3 data-key="product_name_18">Adidas Streetwear Hoodie</h3>
+                    <div class="price-container">
+                        <p class="price final-price">₹5,199</p>
+                        <p class="price original-price">₹6,499</p>
+                    </div>
+                    <div class="product-actions">
+                        <button class="add-to-cart-btn" data-key="add_to_cart_btn">Add to Cart</button>
+                        <button class="buy-now-btn" data-key="buy_now_btn">Buy Now</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-card" data-category="male" data-product-type="hoodie" data-brand="Puma" data-id="3" data-price="2499" data-discount="40" data-rating="4.3" data-reviews="230" data-sizes="S,M,L">
+                <div class="product-image">
+                    <img src="puma01.jpeg" alt="Puma Essential Hoodie">
+                    <i class="far fa-heart wishlist-icon"></i>
+                </div>
+                <div class="product-info">
+                    <span class="brand">Puma</span>
+                    <h3 data-key="product_name_3">Puma Essential Hoodie</h3>
+                    <div class="price-container">
+                        <p class="price final-price">₹2,499</p>
+                        <p class="price original-price">₹4,165</p>
+                    </div>
+                    <div class="product-actions">
+                        <button class="add-to-cart-btn" data-key="add_to_cart_btn">Add to Cart</button>
+                        <button class="buy-now-btn" data-key="buy_now_btn">Buy Now</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-card" data-category="male" data-product-type="hoodie" data-brand="Puma" data-id="9" data-price="2999" data-discount="30" data-rating="4.1" data-reviews="110" data-sizes="S,M,L,XL">
+                <div class="product-image">
+                    <img src="puma02.jpeg" alt="Puma Graphic Hoodie">
+                    <i class="far fa-heart wishlist-icon"></i>
+                </div>
+                <div class="product-info">
+                    <span class="brand">Puma</span>
+                    <h3 data-key="product_name_9">Puma Graphic Hoodie</h3>
+                    <div class="price-container">
+                        <p class="price final-price">₹2,999</p>
+                        <p class="price original-price">₹4,284</p>
+                    </div>
+                    <div class="product-actions">
+                        <button class="add-to-cart-btn" data-key="add_to_cart_btn">Add to Cart</button>
+                        <button class="buy-now-btn" data-key="buy_now_btn">Buy Now</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-card" data-category="male" data-product-type="hoodie" data-brand="Puma" data-id="19" data-price="3199" data-discount="10" data-rating="4.0" data-reviews="65" data-sizes="S,M">
+                <div class="product-image">
+                    <img src="puma03.jpeg" alt="Puma Zip-Up Hoodie">
+                    <i class="far fa-heart wishlist-icon"></i>
+                </div>
+                <div class="product-info">
+                    <span class="brand">Puma</span>
+                    <h3 data-key="product_name_19">Puma Zip-Up Hoodie</h3>
+                    <div class="price-container">
+                        <p class="price final-price">₹3,199</p>
+                        <p class="price original-price">₹3,554</p>
+                    </div>
+                    <div class="product-actions">
+                        <button class="add-to-cart-btn" data-key="add_to_cart_btn">Add to Cart</button>
+                        <button class="buy-now-btn" data-key="buy_now_btn">Buy Now</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-card" data-category="male" data-product-type="hoodie" data-brand="Puma" data-id="20" data-price="3599" data-discount="0" data-rating="3.9" data-reviews="25" data-sizes="L,XL">
+                <div class="product-image">
+                    <img src="puma04.jpeg" alt="Puma Sportstyle">
+                    <i class="far fa-heart wishlist-icon"></i>
+                </div>
+                <div class="product-info">
+                    <span class="brand">Puma</span>
+                    <h3 data-key="product_name_20">Puma Sportstyle</h3>
+                    <div class="price-container">
+                        <p class="price final-price">₹3,599</p>
+                        <p class="price original-price" style="display: none;">₹3,599</p>
+                    </div>
+                    <div class="product-actions">
+                        <button class="add-to-cart-btn" data-key="add_to_cart_btn">Add to Cart</button>
+                        <button class="buy-now-btn" data-key="buy_now_btn">Buy Now</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-card" data-category="male" data-product-type="hoodie" data-brand="Puma" data-id="21" data-price="2899" data-discount="20" data-rating="4.2" data-reviews="130" data-sizes="S,M,L,XL">
+                <div class="product-image">
+                    <img src="puma05.jpeg" alt="Puma Classic Fit">
+                    <i class="far fa-heart wishlist-icon"></i>
+                </div>
+                <div class="product-info">
+                    <span class="brand">Puma</span>
+                    <h3 data-key="product_name_21">Puma Classic Fit</h3>
+                    <div class="price-container">
+                        <p class="price final-price">₹2,899</p>
+                        <p class="price original-price">₹3,624</p>
+                    </div>
+                    <div class="product-actions">
+                        <button class="add-to-cart-btn" data-key="add_to_cart_btn">Add to Cart</button>
+                        <button class="buy-now-btn" data-key="buy_now_btn">Buy Now</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-card" data-category="male" data-product-type="hoodie" data-brand="HRX" data-id="4" data-price="1799" data-discount="50" data-rating="4.5" data-reviews="310" data-sizes="S,M,L">
+                <div class="product-image">
+                    <img src="hrx01.jpeg" alt="HRX Active Hoodie">
+                    <i class="far fa-heart wishlist-icon"></i>
+                </div>
+                <div class="product-info">
+                    <span class="brand">HRX</span>
+                    <h3 data-key="product_name_4">HRX Active Hoodie</h3>
+                    <div class="price-container">
+                        <p class="price final-price">₹1,799</p>
+                        <p class="price original-price">₹3,598</p>
+                    </div>
+                    <div class="product-actions">
+                        <button class="add-to-cart-btn" data-key="add_to_cart_btn">Add to Cart</button>
+                        <button class="buy-now-btn" data-key="buy_now_btn">Buy Now</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-card" data-category="male" data-product-type="hoodie" data-brand="HRX" data-id="12" data-price="1999" data-discount="45" data-rating="4.3" data-reviews="280" data-sizes="M,L,XL">
+                <div class="product-image">
+                    <img src="hrx02.jpeg" alt="HRX Printed Hoodie">
+                    <i class="far fa-heart wishlist-icon"></i>
+                </div>
+                <div class="product-info">
+                    <span class="brand">HRX</span>
+                    <h3 data-key="product_name_12">HRX Printed Hoodie</h3>
+                    <div class="price-container">
+                        <p class="price final-price">₹1,999</p>
+                        <p class="price original-price">₹3,635</p>
+                    </div>
+                    <div class="product-actions">
+                        <button class="add-to-cart-btn" data-key="add_to_cart_btn">Add to Cart</button>
+                        <button class="buy-now-btn" data-key="buy_now_btn">Buy Now</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-card" data-category="male" data-product-type="hoodie" data-brand="HRX" data-id="22" data-price="2099" data-discount="40" data-rating="4.1" data-reviews="190" data-sizes="S,M,L,XL">
+                <div class="product-image">
+                    <img src="hrx03.jpeg" alt="HRX Flex Hoodie">
+                    <i class="far fa-heart wishlist-icon"></i>
+                </div>
+                <div class="product-info">
+                    <span class="brand">HRX</span>
+                    <h3 data-key="product_name_22">HRX Flex Hoodie</h3>
+                    <div class="price-container">
+                        <p class="price final-price">₹2,099</p>
+                        <p class="price original-price">₹3,498</p>
+                    </div>
+                    <div class="product-actions">
+                        <button class="add-to-cart-btn" data-key="add_to_cart_btn">Add to Cart</button>
+                        <button class="buy-now-btn" data-key="buy_now_btn">Buy Now</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-card" data-category="male" data-product-type="hoodie" data-brand="HRX" data-id="23" data-price="1899" data-discount="0" data-rating="4.0" data-reviews="120" data-sizes="S,M">
+                <div class="product-image">
+                    <img src="hrx04.jpeg" alt="HRX Workout Hoodie">
+                    <i class="far fa-heart wishlist-icon"></i>
+                </div>
+                <div class="product-info">
+                    <span class="brand">HRX</span>
+                    <h3 data-key="product_name_23">HRX Workout Hoodie</h3>
+                    <div class="price-container">
+                        <p class="price final-price">₹1,899</p>
+                        <p class="price original-price" style="display: none;">₹1,899</p>
+                    </div>
+                    <div class="product-actions">
+                        <button class="add-to-cart-btn" data-key="add_to_cart_btn">Add to Cart</button>
+                        <button class="buy-now-btn" data-key="buy_now_btn">Buy Now</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-card" data-category="male" data-product-type="hoodie" data-brand="HRX" data-id="24" data-price="1699" data-discount="50" data-rating="4.6" data-reviews="400" data-sizes="S,M,L,XL">
+                <div class="product-image">
+                    <img src="hrx05.jpeg" alt="HRX Daily Fit">
+                    <i class="far fa-heart wishlist-icon"></i>
+                </div>
+                <div class="product-info">
+                    <span class="brand">HRX</span>
+                    <h3 data-key="product_name_24">HRX Daily Fit</h3>
+                    <div class="price-container">
+                        <p class="price final-price">₹1,699</p>
+                        <p class="price original-price">₹3,398</p>
+                    </div>
+                    <div class="product-actions">
+                        <button class="add-to-cart-btn" data-key="add_to_cart_btn">Add to Cart</button>
+                        <button class="buy-now-btn" data-key="buy_now_btn">Buy Now</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-card" data-category="male" data-product-type="hoodie" data-brand="H&M" data-id="5" data-price="1499" data-discount="25" data-rating="4.2" data-reviews="180" data-sizes="S,M,L">
+s                <div class="product-image">
+            <img src="hm01.jpeg" alt="H&M Cotton Hoodie">
+            <i class="far fa-heart wishlist-icon"></i>
+        </div>
+        <div class="product-info">
+            <span class="brand">H&M</span>
+            <h3 data-key="product_name_5">H&M Cotton Hoodie</h3>
+            <div class="price-container">
+                <p class="price final-price">₹1,499</p>
+                <p class="price original-price">₹1,999</p>
+            </div>
+            <div class="product-actions">
+                <button class="add-to-cart-btn" data-key="add_to_cart_btn">Add to Cart</button>
+                <button class="buy-now-btn" data-key="buy_now_btn">Buy Now</button>
+            </div>
+        </div>
+    </div>
+
+            <div class="product-card" data-category="male" data-product-type="hoodie" data-brand="H&M" data-id="10" data-price="1999" data-discount="10" data-rating="4.0" data-reviews="95" data-sizes="M,L,XL">
+                <div class="product-image">
+                    <img src="hm02.jpeg" alt="H&M Oversized Hoodie">
+                    <i class="far fa-heart wishlist-icon"></i>
+                </div>
+                <div class="product-info">
+                    <span class="brand">H&M</span>
+                    <h3 data-key="product_name_10">H&M Oversized Hoodie</h3>
+                    <div class="price-container">
+                        <p class="price final-price">₹1,999</p>
+                        <p class="price original-price">₹2,221</p>
+                    </div>
+                    <div class="product-actions">
+                        <button class="add-to-cart-btn" data-key="add_to_cart_btn">Add to Cart</button>
+                        <button class="buy-now-btn" data-key="buy_now_btn">Buy Now</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-card" data-category="male" data-product-type="hoodie" data-brand="H&M" data-id="25" data-price="1799" data-discount="0" data-rating="3.8" data-reviews="50" data-sizes="S,M">
+                <div class="product-image">
+                    <img src="hm03.jpeg" alt="H&M Trend Hoodie">
+                    <i class="far fa-heart wishlist-icon"></i>
+                </div>
+                <div class="product-info">
+                    <span class="brand">H&M</span>
+                    <h3 data-key="product_name_25">H&M Trend Hoodie</h3>
+                    <div class="price-container">
+                        <p class="price final-price">₹1,799</p>
+                        <p class="price original-price" style="display: none;">₹1,799</p>
+                    </div>
+                    <div class="product-actions">
+                        <button class="add-to-cart-btn" data-key="add_to_cart_btn">Add to Cart</button>
+                        <button class="buy-now-btn" data-key="buy_now_btn">Buy Now</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-card" data-category="male" data-product-type="hoodie" data-brand="Roadster" data-id="26" data-price="999" data-discount="60" data-rating="4.1" data-reviews="550" data-sizes="S,M,L,XL">
+                <div class="product-image">
+                    <img src="https.assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/1806877/2017/3/30/11490891152873-Roadster-Men-Maroon-Solid-Hooded-Sweatshirt-3981490891152643-1.jpg" alt="Roadster Basic Hoodie">
+                    <i class="far fa-heart wishlist-icon"></i>
+                </div>
+                <div class="product-info">
+                    <span class="brand">Roadster</span>
+                    <h3>Roadster Basic Hoodie</h3>
+                    <div class="price-container">
+                        <p class="price final-price">₹999</p>
+                        <p class="price original-price">₹2,499</p>
+                    </div>
+                    <div class="product-actions">
+                        <button class="add-to-cart-btn" data-key="add_to_cart_btn">Add to Cart</button>
+                        <button class="buy-now-btn" data-key="buy_now_btn">Buy Now</button>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+    </main> 
+    
+    <section id="about-us-section" class="info-section">
+        <div class="container">
+            <h2 data-key="about_title">About CozyHood</h2>
+            <p data-key="about_text">Welcome to CozyHood, your one-stop shop for the most comfortable and stylish hoodies in India. We partner with top brands like Nike, Adidas, Puma, and more to bring you the latest collections. Our mission is to provide you with high-quality apparel that keeps you cozy, no matter the season. Founded in 2025, we are committed to fast delivery and excellent customer service.</p>
+        </div>
+    </section>
+
+    <section id="contact-us-section" class="info-section alt-bg">
+        <div class="container">
+            <h2 data-key="contact_title">Get in Touch</h2>
+            <p data-key="contact_subtitle">Have a question or feedback? Fill out the form below and we'll get back to you as soon as possible.</p>
+            
+            <form id="contact-form">
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="contact-name" data-key="contact_name_label">Name</label>
+                        <input type="text" id="contact-name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="contact-email" data-key="contact_email_label">Email</label>
+                        <input type="email" id="contact-email" required>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="contact-message" data-key="contact_message_label">Message</label>
+                    <textarea id="contact-message" rows="5" required></textarea>
+                </div>
+                <button type="submit" class="cta-btn" data-key="contact_submit_btn">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <div class="footer-back-to-top">
+        <a href="#">Back to top</a>
+    </div>
+
+    <footer class="main-footer">
+        <div class="container footer-main-links">
+            
+            <div class="footer-column">
+                <h4 data-key="footer_get_to_know_us">Get to Know Us</h4>
+                <ul>
+                    <li><a href="#about-us-section" data-key="footer_about">About Us</a></li>
+                    <li><a href="#" data-key="footer_careers">Careers</a></li>
+                    <li><a href="#" data-key="footer_press">Press Releases</a></li>
+                    <li><a href="#" data-key="footer_science">CozyHood Science</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-column">
+                <h4 data-key="footer_connect">Connect with Us</h4>
+                <ul>
+                    <li><a href="#" data-key="footer_facebook">Facebook</a></li>
+                    <li><a href="#" data-key="footer_twitter">Twitter</a></li>
+                    <li><a href="#" data-key="footer_instagram">Instagram</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-column">
+                <h4 data-key="footer_make_money">Make Money with Us</h4>
+                <ul>
+                    <li><a href="#" data-key="footer_sell">Sell on CozyHood</a></li>
+                    <li><a href="#" data-key="footer_affiliate">Become an Affiliate</a></li>
+                    <li><a href="#" data-key="footer_protect">Protect Your Brand</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-column">
+                <h4 data-key="footer_help">Let Us Help You</h4>
+                <ul>
+                    <li><a href="#contact-us-section" data-key="footer_contact">Contact Us</a></li>
+                    <li><a href="#" data-key="footer_account">Your Account</a></li>
+                    <li><a href="#" data-key="footer_returns">Returns Centre</a></li>
+                    <li><a href="#" data-key="footer_help_center">Help</a></li>
+                </ul>
+            </div>
+
+        </div>
+    </footer>
+
+    <div class="footer-bottom">
+        <div class="container footer-bottom-container">
+            <a href="#" class="logo">
+                <h1 data-key="logo_text">🧢 CozyHood</h1>
+            </a>
+            
+            <div class="footer-legal">
+                <ul>
+                    <li><a href="#" data-key="footer_terms">Terms & Conditions</a></li>
+                    <li><a href="#" data-key="footer_privacy">Privacy Policy</a></li>
+                </ul>
+                <p data-key="footer_copyright">&copy; 2025 CozyHood India. All rights reserved.</p>
+            </div>
+        </div>
+    </div>
+    
+    <div id="cart-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <h2 data-key="cart_title">Your Cart</h2>
+            <div id="cart-items-container">
+                </div>
+            <div class="cart-summary">
+                <h3><span data-key="cart_total_label">Total:</span> <span id="cart-total">₹0.00</span></h3>
+                <button class="checkout-btn" data-key="cart_checkout_btn">Proceed to Checkout</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="login-modal" class="modal">
+        <div class="modal-content auth-modal-content">
+            <span class="close-btn login-close-btn">&times;</span>
+            
+            <div class="form-tabs">
+                <button class="tab-btn active" data-tab="login" data-key="login_title">Login</button>
+                <button class="tab-btn" data-tab="signup" data-key="signup_title">Sign Up</button>
+            </div>
+
+            <form id="login-form" class="auth-form active">
+                <div class="input-group">
+                    <label for="login-email" data-key="label_email_mobile">Email or Mobile</label>
+                    <input type="text" id="login-email" required>
+                </div>
+                <div class="input-group">
+                    <label for="login-password" data-key="label_password">Password</label>
+                    <input type="password" id="login-password" required>
+                </div>
+                <button type="submit" class="submit-btn" data-key="btn_login">Login</button>
+            </form>
+
+            <form id="signup-form" class="auth-form">
+                <div class="input-group">
+                    <label for="signup-email" data-key="label_email">Email</label>
+                    <input type="email" id="signup-email" required>
+                </div>
+                <div class="input-group">
+                    <label for="signup-password" data-key="label_create_password">Create Password</label>
+                    <input type="password" id="signup-password" required>
+                </div>
+                <button type="submit" class="submit-btn" data-key="btn_signup">Sign Up</button>
+            </form>
+        </div>
+    </div>
+
+    <div id="buy-now-modal" class="modal">
+        <div class="modal-content buy-now-modal-content">
+            <span class="close-btn">&times;</span>
+            <h2 data-key="buy_now_title">Order Summary</h2>
+            
+            <div class="buy-now-body">
+                <div class="buy-now-image">
+                    <img src="nike01.jpeg" alt="Product Image" id="buy-now-img">
+                </div>
+                
+                <div class="buy-now-details">
+                    <h3 id="buy-now-name">Product Name</h3>
+                    <span class="brand" id="buy-now-brand">Brand</span>
+                    
+                    <div class="buy-now-rating">
+                        <span id="buy-now-rating-stars">
+                            </span>
+                        <span id="buy-now-rating-text">(Simulated Rating)</span>
+                    </div>
+
+                    <div class="buy-now-price-summary">
+                        <div class="price-row">
+                            <span data-key="buy_now_original_price">Original Price:</span>
+                            <span id="buy-now-original-price-val">₹6,243.75</span>
+                        </div>
+                        <div class="price-row discount">
+                            <span data-key="buy_now_discount">Discount:</span>
+                            <span id="buy-now-discount-val">- ₹1,248.75</span>
+                        </div>
+                        <hr>
+                        <div class="price-row final-price">
+                            <span data-key="buy_now_final_price">Final Price:</span>
+                            <span id="buy-now-final-price-val">₹4,995.00</span>
+                        </div>
+                    </div>
+
+                    <button class="checkout-btn" id="confirm-purchase-btn" data-key="buy_now_confirm_btn">
+                        Confirm Purchase
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="product-detail-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            
+            <div class="detail-modal-layout">
+                <div class="detail-modal-image">
+                    <img src="nike01.jpeg" id="detail-img" alt="Product Detail Image">
+                </div>
+                
+                <div class="detail-modal-info">
+                    <span class="brand" id="detail-brand">Nike</span>
+                    <h2 id="detail-name">Nike Sportswear Hoodie</h2>
+                    
+                    <div class="detail-rating">
+                        <span id="detail-rating-stars"><i class="fas fa-star"></i></span>
+                        <span id="detail-rating-text" data-key="rating_text">{rating} stars ({reviews} reviews)</span>
+                    </div>
+                    
+                    <div class="detail-price-box">
+                        <div class="price-container">
+                            <span class="final-price" id="detail-final-price">₹4,995</span>
+                            <span class="original-price" id="detail-original-price">₹6,244</span>
+                        </div>
+                        <span class="discount-text" id="detail-discount-text" data-key="discount_text">({discount}% OFF)</span>
+                    </div>
+
+                    <div classs="size-selector">
+                        <h4 data-key="size_select_title">Select Size</h4>
+                        <div class="size-options" id="detail-size-options">
+                            </div>
+                    </div>
+                    
+                    <div class="detail-modal-actions">
+                        <button class="add-to-cart-btn" id="detail-add-to-cart-btn" data-key="add_to_cart_btn">Add to Cart</button>
+                        <button class="buy-now-btn" id="detail-buy-now-btn" data-key="buy_now_btn">Buy Now</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="reviews-section">
+                <h3 data-key="reviews_title">Customer Reviews</h3>
+                <div id="detail-reviews-list">
+                    </div>
+            </div>
+        </div>
+    </div>
+    <div id="toast-notification" class="toast"></div>
+
+    <script src="shop.translations.js"></script>
+    <script src="shop.script.js"></script>
+</body>
+</html>
